@@ -1,0 +1,5 @@
+run:
+	@uvicorn workoutapi.main:app --reload
+
+create-migrations:
+	@PYTHONPATH=workoutapi python -m alembic revision --autogenerate
